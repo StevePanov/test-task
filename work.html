@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Test task</title>
+        <style>
+            .grid {
+                margin: 50px auto;
+                max-width: 700px;
+                min-width: 360px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+            }
+            .container {
+                grid-column: 1/-1;
+                margin-top: 16px;
+            }
+            .box {
+                border: 2px solid #00c69e;
+                text-align: center;
+                line-height: 30px;
+                padding: 5px;
+                font-size: 22px;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            input[type="text"]:focus {
+                outline: none;
+            }
+            .left {
+                color: #ffffff;
+                border-radius: 10px 0 0 10px;
+                background: #00c69e
+            }
+            .right {
+                border-radius: 0 10px 10px 0;
+                color: #00c69e;
+            }
+            </style>
+    </head>
+    <body class="grid">
+        <div class="box left">Введите userId</div>
+        <input type="text" class="box right" id="usersId">
+        <div class="container"></div>
+        <script src='work.js'></script>
+    </body>
+</html>
